@@ -42,22 +42,22 @@ export default async function beforeEachRoute(
   from: RouteLocationNormalized,
   next: NavigationGuardNext,
 ): Promise<void> {
-  // try {
-  //   const toName = to.name?.toString() || '';
+  try {
+    const toName = to.name?.toString() || '';
 
-  //   if (!AUTH_ROUTES_NAMES.includes(toName)) {
-  //     const userAuthenticated = await isAuthenticated();
+    if (!AUTH_ROUTES_NAMES.includes(toName)) {
+      const userAuthenticated = await isAuthenticated();
 
-  //     if (!userAuthenticated) {
-  //       next({ name: 'Login' });
+      if (!userAuthenticated) {
+        next({ name: 'Login' });
 
-  //       return;
-  //     }
-  //   }
-  // } catch (_) {
-  //   next({ name: 'Login' });
-  //   return;
-  // }
+        return;
+      }
+    }
+  } catch (_) {
+    next({ name: 'Login' });
+    return;
+  }
 
   next();
 }

@@ -47,6 +47,11 @@ export default defineComponent({
   }
   p {
     color: $text-dark-grey-5;
+    font-size: 15px;
+    
+    .highlight {
+      font-size: 15px;
+    }
   }
   a {
     color: $link-color;
