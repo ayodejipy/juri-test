@@ -12,7 +12,7 @@
     },
     "completed": {
         "title": "Didn't get an email?",
-        "sub": "If you don't see an email from uus within an few minutes, a few things could have happened:",
+        "sub": "If you don't see an email from us within an few minutes, a few things could have happened:",
         "items": {
             "spamFolder": "The email is on your spam folder.",
             "mistakeEmail": "The email address you entered had a mistake or typo.",
