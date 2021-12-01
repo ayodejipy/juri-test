@@ -88,15 +88,33 @@ export default defineComponent({
       font-size: 14px;
       line-height: 27px;
     }
+    
+    @media only screen and (max-width: 768px) {
+      padding: 10px 12px;
+      flex-direction: row;
+    }
   }
   .page2-left-padding {
     padding: 30px 70px 0 70px;
+    
+    @media only screen and (max-width: 768px) {
+      flex-direction: row;
+      padding: 13px 3px;
+    }
   }
   .page2-right-padding {
     padding: 30px 60px 0 60px;
+    
+    @media only screen and (max-width: 768px) {
+      justify-content: space-between;
+      padding-right: 0;
+    }
   }
   .page3-right-padding {
     padding: 30px 40px 0 40px;
+    @media only screen and (max-width: 768px) {
+      padding: 0;
+    }
   }
 }
 
@@ -106,6 +124,7 @@ export default defineComponent({
     flex-direction: column;
     height: fit-content;
     justify-content: center;
+    
     .logo-container {
       border-radius: 5px 5px 0px 0px;
       padding-top: 27px;
@@ -114,6 +133,10 @@ export default defineComponent({
       img {
         width: 83px;
         height: 23px;
+      }
+      @media only screen and (max-width: 768px) {
+        padding-right: 20px;
+        padding-left: 20px;
       }
     }
     .selector {
@@ -124,6 +147,12 @@ export default defineComponent({
       background-color: $neutral-bg ;
       justify-content: flex-end;
       display: flex;
+      
+      @media only screen and (max-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+      }
     }
 
   }

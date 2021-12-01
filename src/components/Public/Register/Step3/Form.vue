@@ -191,6 +191,10 @@ export default defineComponent({
 .form {
   padding: 68px 40px 50px 40px;
   
+  @media screen and (max-width: 768px) {
+    padding: 36px 18px;
+  }
+  
   .buttons {
     flex-direction: row;
   }

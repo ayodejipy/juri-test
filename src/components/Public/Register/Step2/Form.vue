@@ -158,6 +158,10 @@ export default defineComponent({
 <style lang="scss" scoped>
 form {
   padding: 68px 60px 50px 60px;
+  
+  @media screen and (max-width: 768px) {
+    padding: 32px 16px;
+  }
 }
 .inputs .names {
   display: flex;

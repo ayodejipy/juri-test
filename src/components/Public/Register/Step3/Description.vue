@@ -2,7 +2,7 @@
   <div class="description step3">
     <h1>{{ t(`Step3.description.main`) }}</h1>
     <p>{{ t(`Step3.description.sub`) }}</p>
-    <div>
+    <div class="checklist">
       <h1>{{ t(`Step3.description.itemsBrand`) }}</h1>
       <ul>
         <checked-item :label="t(`Step3.description.items.saveTime`)" />
@@ -40,6 +40,14 @@ export default defineComponent({
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }
+  
+   @media screen and (max-width: 768px) {
+    padding: 25px 20px;
+    
+    .checklist {
+      display: none;
+    }
   }
 }
 </style>

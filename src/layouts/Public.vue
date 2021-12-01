@@ -21,14 +21,32 @@ export default {
   grid-template-columns: 510px 480px;
   width: 990px;
   height: fit-content;
+  
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    padding: 0 16px;
+  }
 }
 
-@media screen and (max-width: 1060px) {
+/* @media screen and (max-width: 1060px) {
   .login-card {
     width: 90%;
     padding: 0px 50px;
   }
+} */
+
+@media screen and (max-width: 768px) {
+  .login-page {
+    width: 100%;
+    padding: 45px 16px;
+  }
 }
+/* @media screen and (max-width: 678px) {
+  .login-page {
+    width: 100%;
+    padding: 45px 16px;
+  }
+} */
 
 @media (orientation: portrait) {
   .login-card {

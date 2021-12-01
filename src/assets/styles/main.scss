@@ -85,17 +85,17 @@ body {
 }
 
 #app {
-  // min-height: 100vh;
+  min-height: 100vh;
 }
 .login-page {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  // min-height: calc(100vh - 50px);
+  min-height: 100vh;
   height: fit-content;
   background-color: $primary;
-  padding: 100px 0;
+  padding: 66px 0;
 }
 
 @media screen and (max-width: 960px) {

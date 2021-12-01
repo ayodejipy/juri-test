@@ -39,6 +39,14 @@ div.description {
   img.descriptive {
     width: 100px;
   }
+  
+  @media screen and (max-width: 768px) {
+    padding: 25px 20px;
+    
+    img.descriptive {
+      width: 50px;
+    }
+  }
 }
 .lawyer-image-container {
   display: flex;
@@ -51,6 +59,10 @@ div.description {
     span {
       color: $text-dark-grey;
     }
+  }
+  
+  @media screen and (max-width: 768px) {
+    justify-content: flex-start;
   }
 }
 </style>
