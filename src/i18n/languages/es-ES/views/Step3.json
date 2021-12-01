@@ -1,5 +1,6 @@
 {
   "form": {
+    "prelude": "Paso 3 de 3",
     "title": "Enhorabuena, estamos preparando su prueba gratuita.",
     "companyName": "Nombre de la empresa",
     "companyNamePlaceholder": "Juridoc",
@@ -73,7 +74,7 @@
     "confirmTerms": "Confirmo que he leído, consentido y aceptado las condiciones de uso y la política de privacidad de Juridoc, y que soy mayor de edad."
   },
   "description": {
-    "main": "Ya casi has terminado",
+    "main": "Ya casi terminas, ¡felicitaciones! Estamos configurando su prueba gratuita.",
     "sub": "Sólo unos pocos detalles más sobre su negocio y estará listo para empezar",
     "itemsBrand": "Construya su negocio con nosotros",
     "items": {

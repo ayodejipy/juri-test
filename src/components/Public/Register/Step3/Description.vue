@@ -29,13 +29,17 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-h1, p {
-  color: $text-dark-grey-2;
-}
-ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+.description {
+  padding: 30px 70px 0 70px;
+  
+  h1, p {
+    color: $text-dark-grey-2;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 </style>

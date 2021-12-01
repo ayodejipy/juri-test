@@ -1,13 +1,16 @@
 <template>
   <div class="header">
-    <div class="logo-container">
+    <div class="logo-container" :class="[{'page2-left-padding': currentPage == 'page-2' || currentPage == 'page-3' }]">
       <img
         class="logo"
         alt="Juridoc Logo"
         v-lazy="{ src: '/images/logo.png' }"
       />
     </div>
-    <div class="selector">
+    <div class="selector" :class="[
+      {'page2-right-padding': currentPage == 'page-2'},
+      {'page3-right-padding': currentPage == 'page-3'}
+    ]">
       <span>{{step}}</span>
       <SelectLang v-model="currentLang" />
     </div>
@@ -40,7 +43,13 @@ export default defineComponent({
       if (route.name === 'RegisterStep3') return i18n.t('Step3.form.prelude');
       return '';
     });
-    return { currentLang, step, t: i18n.t };
+    
+    const currentPage = computed(() => {
+      if (route.name === 'RegisterStep2') return 'page-2';
+      if (route.name === 'RegisterStep3') return 'page-3';
+      return ''
+    })
+    return { currentLang, currentPage, step, t: i18n.t };
   },
 });
 </script>
@@ -55,9 +64,10 @@ export default defineComponent({
 
   .logo-container {
     border-radius: 5px 0px 0px 0px;
-    padding-top: 23px;
+    padding-top: 30px;
     background-color: $neutral-bg ;
-    padding-left: 90px;
+    padding-left: 60px;
+    /* padding: 30px 60px 50px 60px; */
     img {
       width: 83px;
       height: 23px;
@@ -65,9 +75,10 @@ export default defineComponent({
   }
   .selector {
     border-radius: 0px 5px 0px 0px;
-    padding-top: 23px;
-    padding-right: 90px;
-    padding-left: 70px;
+    /* padding-top: 30px;
+    padding-right: 60px;
+    padding-left: 70px; */
+    padding: 30px 60px 0 60px;
     width: 100%;
     background-color: $white;
     justify-content: space-between;
@@ -77,6 +88,15 @@ export default defineComponent({
       font-size: 14px;
       line-height: 27px;
     }
+  }
+  .page2-left-padding {
+    padding: 30px 70px 0 70px;
+  }
+  .page2-right-padding {
+    padding: 30px 60px 0 60px;
+  }
+  .page3-right-padding {
+    padding: 30px 40px 0 40px;
   }
 }
 

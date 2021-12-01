@@ -1,5 +1,6 @@
 {
   "form": {
+    "prelude": "Étape 3 sur 3",
     "title": "Vous avez presque terminé.",
     "companyName": "Nom de l'entreprise",
     "companyNamePlaceholder": "Juridoc",
@@ -73,7 +74,7 @@
     "confirmTerms": "Je confirme que j'ai lu, consenti et accepté les conditions d'utilisation et la politique de confidentialité de Juridoc, et que je suis majeur."
   },
   "description": {
-    "main": "Vous avez presque terminé",
+    "main": "Vous avez presque terminé, félicitations ! Nous mettons en place votre essai gratuit.",
     "sub": "Encore quelques détails sur votre entreprise et vous serez prêt à commencer",
     "itemsBrand": "Développez votre entreprise avec nous!",
     "items": {

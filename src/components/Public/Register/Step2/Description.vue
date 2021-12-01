@@ -31,6 +31,8 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 div.description {
+  padding: 30px 70px 50px 70px;
+  
   h1 {
     flex-grow: 1;
   }
@@ -41,6 +43,7 @@ div.description {
 .lawyer-image-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
   .legend {
     display: flex;

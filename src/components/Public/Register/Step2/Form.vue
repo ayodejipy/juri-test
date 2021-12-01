@@ -4,9 +4,9 @@
     @submit.prevent
   >
     <div class="form-content">
-      <div class="form-title">
+      <!-- <div class="form-title">
         <h1>{{ t(`Step2.form.title`) }}</h1>
-      </div>
+      </div> -->
       <div class="inputs">
         <div class="names">
           <base-input
@@ -156,6 +156,9 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+form {
+  padding: 68px 60px 50px 60px;
+}
 .inputs .names {
   display: flex;
   gap: 1rem;

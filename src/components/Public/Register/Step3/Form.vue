@@ -4,9 +4,9 @@
     @submit.prevent
   >
     <div class="form-content">
-      <div class="form-title">
+      <!-- <div class="form-title">
         <h1>{{ t(`Step3.form.title`) }}</h1>
-      </div>
+      </div> -->
       <div class="inputs">
         <base-input
           v-model="v$.company.$model"
@@ -188,10 +188,18 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.form .buttons {
-  flex-direction: row;
-}
-.form .form-title h1 {
-  font-size: 28px;
+.form {
+  padding: 68px 40px 50px 40px;
+  
+  .buttons {
+    flex-direction: row;
+  }
+  .form-title h1 {
+    font-size: 28px;
+  }
+  button.primary,
+  form button.undo {
+    font-size: 16px;
+  }
 }
 </style>

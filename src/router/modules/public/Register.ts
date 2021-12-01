@@ -1,4 +1,5 @@
 import { RouteRecordRaw } from 'vue-router';
+// :token/:isGoogle?
 
 export default {
   name: 'Register',
@@ -11,12 +12,12 @@ export default {
       component: () => import('@/views/Public/Register/Step1.vue'),
     },
     {
-      path: 'step/2/:token/:isGoogle?',
+      path: 'step/2/',
       name: 'RegisterStep2',
       component: () => import('@/views/Public/Register/Step2.vue'),
     },
     {
-      path: 'step/3/:token/:isGoogle?',
+      path: 'step/3/',
       name: 'RegisterStep3',
       component: () => import('@/views/Public/Register/Step3.vue'),
     },

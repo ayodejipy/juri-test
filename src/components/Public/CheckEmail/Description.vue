@@ -50,9 +50,11 @@ export default defineComponent({
   }
   a {
     color: $link-color;
+    font-size: 15px;
   }
   .description-footer p {
     margin-bottom: 0;
+    font-size: 15px;
   }
 }
 </style>
