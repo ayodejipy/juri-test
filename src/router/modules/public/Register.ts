@@ -12,7 +12,7 @@ export default {
       component: () => import('@/views/Public/Register/Step1.vue'),
     },
     {
-      path: 'step/2/:token/:isGoogle?',
+      path: 'step/2/',
       name: 'RegisterStep2',
       component: () => import('@/views/Public/Register/Step2.vue'),
     },
