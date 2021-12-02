@@ -137,12 +137,13 @@ export default defineComponent({
       background-color: $neutral-bg ;
       padding-left: 10%;
       img {
-        width: 83px;
-        height: 23px;
+        width: 110px;
+        height: auto;
       }
       @media only screen and (max-width: 768px) {
-        padding-right: 20px;
-        padding-left: 20px;
+        /* padding-right: 20px;
+        padding-left: 20px; */
+        padding: 32px 20px 22px;
       }
     }
     .selector {
@@ -157,7 +158,7 @@ export default defineComponent({
       @media only screen and (max-width: 768px) {
         display: flex;
         justify-content: space-between;
-        padding: 10px 20px;
+        padding: 18px 20px;
       }
     }
 
