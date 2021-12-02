@@ -139,6 +139,13 @@ export default defineComponent({
 </script>
 
 <style lang="scss"  scoped>
+.form .buttons {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
 .forgotPassword a {
   font-size: 13px;
 }

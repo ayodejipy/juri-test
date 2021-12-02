@@ -36,6 +36,14 @@
       display: flex;
       justify-content: flex-end;
       margin-top: 0.25rem;
+      
+      @media screen and (max-width: 768px) {
+        margin-top: 0.58rem;
+      }
+    }
+    
+    @media screen and (max-width: 768px) {
+      gap: 1.5rem;
     }
   }
   .inputs {
