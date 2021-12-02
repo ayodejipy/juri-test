@@ -60,11 +60,11 @@ export default defineComponent({
   display: grid;
   grid-column: 1/3;
   grid-template-columns: 510px 480px;
-  height: 50px;
+  height: 80px;
 
   .logo-container {
     border-radius: 5px 0px 0px 0px;
-    padding-top: 30px;
+    padding-top: 50px;
     background-color: $neutral-bg ;
     padding-left: 60px;
     /* padding: 30px 60px 50px 60px; */
@@ -78,7 +78,7 @@ export default defineComponent({
     /* padding-top: 30px;
     padding-right: 60px;
     padding-left: 70px; */
-    padding: 30px 60px 0 60px;
+    padding: 50px 60px 0 60px;
     width: 100%;
     background-color: $white;
     justify-content: space-between;
@@ -95,7 +95,7 @@ export default defineComponent({
     }
   }
   .page2-left-padding {
-    padding: 30px 70px 0 70px;
+    padding: 50px 70px 0 70px;
     
     @media only screen and (max-width: 768px) {
       flex-direction: row;
@@ -103,7 +103,7 @@ export default defineComponent({
     }
   }
   .page2-right-padding {
-    padding: 30px 60px 0 60px;
+    padding: 50px 60px 0 60px;
     
     @media only screen and (max-width: 768px) {
       justify-content: space-between;
@@ -111,7 +111,13 @@ export default defineComponent({
     }
   }
   .page3-right-padding {
-    padding: 30px 40px 0 40px;
+    padding: 50px 40px 0 40px;
+    @media only screen and (max-width: 768px) {
+      padding: 0;
+    }
+  }
+  .page3-right-padding {
+    padding: 50px 40px 0 40px;
     @media only screen and (max-width: 768px) {
       padding: 0;
     }
