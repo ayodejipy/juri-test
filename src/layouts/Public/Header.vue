@@ -143,7 +143,7 @@ export default defineComponent({
       @media only screen and (max-width: 768px) {
         /* padding-right: 20px;
         padding-left: 20px; */
-        padding: 32px 20px 22px;
+        padding: 50px 20px 22px;
       }
     }
     .selector {
