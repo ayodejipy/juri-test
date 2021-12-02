@@ -34,7 +34,7 @@ div.description {
   padding: 30px 70px 50px 70px;
   
   h1 {
-    flex-grow: 1;
+    flex-grow: .35;
   }
   img.descriptive {
     width: 100px;
@@ -51,8 +51,9 @@ div.description {
 .lawyer-image-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1rem;
+  
   .legend {
     display: flex;
     flex-direction: column;
