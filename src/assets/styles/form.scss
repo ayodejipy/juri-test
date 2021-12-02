@@ -44,7 +44,7 @@
         margin-top: 0.58rem;
       }
     }
-    button.btn {
+    button.neutral {
       @media screen and (max-width: 768px) {
         margin-top: 0.85rem;
       }
@@ -64,6 +64,10 @@
         margin-bottom: 0.70rem;
       }
     }  
+    
+    @media screen and (max-width: 768px) {
+      margin-bottom: 1rem;
+    }
   }
 }
 

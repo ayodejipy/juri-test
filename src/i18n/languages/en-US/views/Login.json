@@ -12,7 +12,7 @@
     "emailPlaceholder": "name{'@'}email.com",
     "passwordPlaceholder": "Enter your password",
     "loginButton": "Login",
-    "loginWithGoogle": "Signin with Google",
+    "loginWithGoogle": "Sign in with Google",
     "forgotPassword": "Forgot password?"
   }
 }
