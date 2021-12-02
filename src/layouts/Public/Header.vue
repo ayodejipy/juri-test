@@ -69,8 +69,8 @@ export default defineComponent({
     padding-left: 60px;
     /* padding: 30px 60px 50px 60px; */
     img {
-      width: 83px;
-      height: 23px;
+      width: 110px;
+      height: auto;
     }
   }
   .selector {
