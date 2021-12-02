@@ -28,5 +28,10 @@ div.description {
   p {
     flex-grow: 1;
   }
+  
+  .descriptive {
+    width: 90%;
+    align-self: center;
+  }
 }
 </style>
