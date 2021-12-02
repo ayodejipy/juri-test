@@ -144,6 +144,8 @@ export default defineComponent({
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    -webkit-column-gap: 1.5rem;
+    -moz-column-gap: 1.5rem;
   }
 }
 .forgotPassword a {
