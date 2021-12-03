@@ -87,6 +87,12 @@ body {
 #app {
   min-height: 100vh;
 }
+
+#app input.vti__input {
+  color: #3B4960;
+  background-color: transparent;
+}
+
 .login-page {
   display: flex;
   justify-content: center;
