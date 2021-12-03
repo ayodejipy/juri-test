@@ -7,7 +7,8 @@
     <vue-tel-input
       v-model="state.phone"
       v-maska="['+## ## ########', '+## ## #########']"
-      class="phone-input"
+      class="phone-input no-bg"
+      :class="classes"
       :input-options="{
         placeholder,
         required,
@@ -89,8 +90,15 @@ export default defineComponent({
   }
   &::placeholder {
     color: $text-soft-grey;
+     color: #3A485F;
     opacity: 1;
   }
+}
+.no-bg {
+  input v{
+    display: none;
+  }
+  background-color: none !important;
 }
 .phone-input-container input.error {
   border-color: $error;
@@ -126,6 +134,9 @@ export default defineComponent({
   background-color: transparent;
 }
 .vue-tel-input{
+  &:focus-within {
+    background-color: none !important;
+  }
   border: 1px solid $border-neutral;
 }
 
